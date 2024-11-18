@@ -2,7 +2,9 @@
 
 import React from 'react';
 
+
 const CourseList = ({ courses, registrations }) => {
+  
   return (
     <div>
       <h2>Registered Courses</h2>
@@ -13,6 +15,7 @@ const CourseList = ({ courses, registrations }) => {
       <ul>
         {courses.map((course, index) => ( <li key={index}> {course.type}, {course.name} </li>))}
       </ul>
+      
     </div>
   );
 };
